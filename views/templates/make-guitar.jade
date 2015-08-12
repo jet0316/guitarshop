@@ -1,0 +1,16 @@
+form(ng-submit="addGuitar()")
+	input(placeholder="Guitar Brand", ng-model="newGuitar.companyName")
+	input(placeholder="Model", ng-model="newGuitar.model")
+	input(placeholder="Electric?", ng-model="newGuitar.electric")
+	input(placeholder="Price", ng-model="newGuitar.price")
+	input(placeholder="image url", ng-model="newGuitar.image")
+	input(type="submit")
+	hr
+
+.guitars
+	.guitar-list.container(ng-repeat="item in guitar")
+		a(href="guitar/{{item._id}}")
+			h1 {{item.companyName}}
+		h4 {{item.model}}
+		h4 {{item.price | currency}}
+		

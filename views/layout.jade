@@ -1,0 +1,75 @@
+doctype html
+html(lang='en', ng-app="angular")
+	head
+		meta(charset="utf-8")
+		title Untitled
+		link(rel="stylesheet", href="CSS/main.css")
+		link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cerulean/bootstrap.min.css")
+
+	body
+
+		nav(class="navbar navbar-inverse")
+			div(class="container-fluid")
+				div(class="navbar-header")
+					button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false")
+						span(class="sr-only") Toggle navigation
+						span(class="icon-bar")
+						span(class="icon-bar")
+						span(class="icon-bar")
+					a(class="navbar-brand" href="#") Used Guitars
+				div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+					ul(class="nav navbar-nav")
+						li(class="active")
+							a(href="#") Link
+							span(class="sr-only") (current)
+						li
+							a(href="#") Link
+						li(class="dropdown")
+							a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Dropdown 
+							span(class="caret")
+							ul(class="dropdown-menu")
+								li
+									a(href="") Action
+								li
+									a(href="") Another action
+								li
+									a(href="") Something else here
+								li(role="separator" class="divider")
+								li
+									a(href="") Separated link
+								li(role="separator" class="divider")
+								li
+									a(href="") One more separated link
+					form(class="navbar-form dnavbar-left" role="search")
+						div(class="form-group")
+							input(type="text" class="form-control" placeholder="Search")
+						button(type="submit" class="btn btn-default") Submit
+					ul(class="nav navbar-nav navbar-right")
+						li
+							a(href="#") Link
+						li(class="dropdown")
+							a(href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Dropdown 
+							span(class="caret")
+							ul(class="dropdown-menu")
+								li
+									a(href="#") Action
+								li
+									a(href="#") Another action
+								li
+									a(href="#") Something else here
+								li(role="separator" class="divider")
+								li
+									a(href="#") Separated link
+
+
+
+
+		block content
+
+
+
+
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-resource.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular-route.js")
+		script(src="JavaScript/main.js")
